@@ -49,7 +49,7 @@ class TelaExercicios extends StatelessWidget {
               const SizedBox(height: 32),
 
               // ── Exercício 1: StatelessWidget ──
-              _BadgeExercicio(label: 'Exercício 1: StatelessWidget'),
+              const _BadgeExercicio(label: 'Exercício 1: StatelessWidget'),
               const SizedBox(height: 12),
               const CartaoPerfil(
                 nome: 'Maria Silva',
@@ -60,7 +60,7 @@ class TelaExercicios extends StatelessWidget {
               const SizedBox(height: 32),
 
               // ── Exercício 2: StatefulWidget ──
-              _BadgeExercicio(label: 'Exercício 2: StatefulWidget'),
+              const _BadgeExercicio(label: 'Exercício 2: StatefulWidget'),
               const SizedBox(height: 12),
               const LogotipoInterativo(),
               const SizedBox(height: 32),
@@ -71,12 +71,12 @@ class TelaExercicios extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16),
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.all(24),
+                child: const Padding(
+                  padding: EdgeInsets.all(24),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text(
+                      Text(
                         '📝 Notas de Implementação',
                         style: TextStyle(
                           fontSize: 16,
@@ -84,13 +84,13 @@ class TelaExercicios extends StatelessWidget {
                           color: Color(0xFF1F2937),
                         ),
                       ),
-                      const SizedBox(height: 12),
+                      SizedBox(height: 12),
                       _Nota(
                         'Exercício 1',
                         'Widget estático com campos final, recebe nome e '
                             'descrição no construtor — nunca reconstrói.',
                       ),
-                      const SizedBox(height: 8),
+                      SizedBox(height: 8),
                       _Nota(
                         'Exercício 2',
                         'Estado interno _tamanhoLogo atualizado via setState(), '
